@@ -152,3 +152,115 @@ Si se usara un `HashMap` en lugar de `TreeMap`, entonces `hashCode()` y `equals(
 Para administrar un directorio telefónico sin claves duplicadas y ordenado por nombre, la mejor solución es un **`TreeMap`**. Esto garantiza orden automático y eficiencia en operaciones de búsqueda y modificación.
 
 ![alt text](image.png)
+
+---
+
+### Salida esperada en Consola
+.0.6.7-hotspot\bin\java.exe' '@C:\Users\duran\AppData\Local\Temp\cp_cl04zik2kh7g2w8ozlkbgdlta.argfile' 'App' 
+----Practica Mapas----
+Nombre: Daniel Duran
+Empleado agregado: 
+SID: 4, Name: Pedro, Position: DEV
+Empleado agregado: 
+SID: 2, Name: Pedro, Position: DEV
+Empleado agregado:
+SID: 5, Name: Juan, Position: DEV
+Empleado agregado:
+SID: 3, Name: Maria, Position: DEV
+Empleado agregado:
+SID: 1, Name: Juan, Position: DEV
+
+Lista de empleados:
+
+SID: 1, Name: Juan, Position: DEV
+
+SID: 2, Name: Pedro, Position: DEV
+
+SID: 3, Name: Maria, Position: DEV
+
+SID: 4, Name: Pedro, Position: DEV
+
+SID: 5, Name: Juan, Position: DEV
+Empleado eliminado:
+SID: 2, Name: Pedro, Position: DEV
+
+Lista de empleados:
+
+SID: 1, Name: Juan, Position: DEV
+
+SID: 3, Name: Maria, Position: DEV
+
+SID: 4, Name: Pedro, Position: DEV
+
+SID: 5, Name: Juan, Position: DEV
+Empleado agregado:
+SID: 5, Name: Pedro, Position: Dev
+Empleado agregado:
+SID: 3, Name: Juan, Position: Dev
+Empleado agregado:
+SID: 1, Name: Jose, Position: Dev
+Empleado agregado:
+SID: 2, Name: Pedro, Position: Dev
+Empleado agregado:
+SID: 4, Name: Pedro, Position: Dev
+Empleado agregado:
+SID: 5, Name: Pedro, Position: Dev
+Empleado agregado:
+SID: 3, Name: Juan, Position: Dev
+Empleado agregado:
+SID: 1, Name: Jose, Position: Dev
+Empleado agregado:
+SID: 2, Name: Pedro, Position: Dev
+Empleado agregado:
+SID: 4, Name: Pedro, Position: Dev
+---------------- HASH MAP
+
+Lista de empleados:
+
+SID: 1, Name: Jose, Position: Dev
+
+SID: 2, Name: Pedro, Position: Dev
+
+SID: 3, Name: Juan, Position: Dev
+
+SID: 4, Name: Pedro, Position: Dev
+
+SID: 5, Name: Pedro, Position: Dev
+---------------- TREE MAP
+
+SID: 2, Name: Pedro, Position: Dev
+
+SID: 3, Name: Juan, Position: Dev
+
+SID: 4, Name: Pedro, Position: Dev
+
+SID: 5, Name: Pedro, Position: Dev
+---------------- TREE MAP
+
+Lista de empleados:
+
+SID: 1, Name: Jose, Position: Dev
+
+SID: 2, Name: Pedro, Position: Dev
+
+SID: 3, Name: Juan, Position: Dev
+
+SID: 4, Name: Pedro, Position: Dev
+
+SID: 5, Name: Pedro, Position: Dev
+PS D:\DEBERES DANIEL ANTONIO\UNIVERSIDAD POLITECNICA SALESIANA\SEGUNDO CICLO\Estructura de Datos\SegundoInterciclo\icc-estructura-u2-maps>
+
+
+
+Lista de empleados:
+
+SID: 1, Name: Jose, Position: Dev
+
+SID: 2, Name: Pedro, Position: Dev
+
+SID: 3, Name: Juan, Position: Dev
+
+SID: 4, Name: Pedro, Position: Dev
+
+SID: 5, Name: Pedro, Position: Dev
+PS D:\DEBERES DANIEL ANTONIO\UNIVERSIDAD POLITECNICA SALESIANA\SEGUNDO CICLO\Estructura de Datos\SegundoInterciclo\icc-estructura-u2-ma

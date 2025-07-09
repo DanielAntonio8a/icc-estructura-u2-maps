@@ -8,7 +8,7 @@ import models.Empleado;
 
 public class Mapa {
     public Mapa() {
-        System.out.println("Mapa Class");
+        System.out.println("Mapa Class\n");
     }
 
     public void runHashMap(){

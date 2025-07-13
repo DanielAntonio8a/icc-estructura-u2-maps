@@ -1,3 +1,6 @@
+import java.util.Arrays;
+
+import controllers.Ejercicios;
 import controllers.EmpleadoContoller;
 import controllers.EmpleadoDAO;
 import controllers.EmpleadoDAOHashMap;
@@ -70,6 +73,32 @@ public class App {
     controladorHash.listarEmpleados();
     System.out.println("---------------- TREE MAP");
     controladorTree.listarEmpleados();
+    Ejercicios ejercicios = new Ejercicios();
+
+    System.out.println("\n\t Ejercicios Mapas Ejercicio 1");
+        String str1 = "listen";
+        String str2 = "silent";
+        String str3 = "hello";
+
+        System.out.println("\"" + str1 + "\" y \"" + str2 + "\" son anagramas: " + ejercicios.areAnagrams(str1, str2)); // true
+        System.out.println("\"" + str1 + "\" y \"" + str3 + "\" son anagramas: " + ejercicios.areAnagrams(str2, str3)); // false
+
+         System.out.println("\n\t Ejercicios Mapas Ejercicio 2");
+        // Test para sonAnagramas (mismo resultado que el anterior)
+        System.out.println("¿'roma' y 'amor' son anagramas?: " + ejercicios.sonAnagramas("roma", "amor"));
+
+        // Test para sumatoriaDeDos
+        System.out.println("\n\t Ejercicios Mapas Ejercicio 3");
+        int[] resultado1 = ejercicios.sumatoriaDeDos(new int[]{9, 2, 3, 6}, 5);
+        System.out.println("Indices con suma 5: " + (resultado1 != null ? Arrays.toString(resultado1) : "No hay combinación"));
+
+        int[] resultado2 = ejercicios.sumatoriaDeDos(new int[]{9, 2, 3, 6}, 10);
+        System.out.println("Indices con suma 10: " + (resultado2 != null ? Arrays.toString(resultado2) : "No hay combinación"));
+
+        // Test para contarCaracteres
+        System.out.println("\n\t Ejercicios Mapas Ejercicio 4");
+        System.out.print("Frecuencia de caracteres en 'hola': ");
+        ejercicios.contarCaracteres("hola");
 
     }
 

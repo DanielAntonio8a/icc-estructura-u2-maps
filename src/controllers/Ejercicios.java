@@ -1,6 +1,7 @@
 package controllers;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Ejercicios {
 
@@ -28,8 +29,34 @@ public class Ejercicios {
      * frecuencia.
      */
     public static boolean areAnagrams(String str1, String str2) {
-        throw new UnsupportedOperationException("Not implemented yet");
+                // Eliminar espacios y convertir a minúsculas para comparación
+        str1 = str1.replaceAll("\\s+", "").toLowerCase();
+        str2 = str2.replaceAll("\\s+", "").toLowerCase();
 
+        // Si las longitudes son diferentes, no pueden ser anagramas
+        if (str1.length() != str2.length()) {
+            return false;
+        }
+
+        // Crear un mapa para contar la frecuencia de caracteres en la primera cadena
+        Map<Character, Integer> charFrequencies = new HashMap<>();
+        for (char c : str1.toCharArray()) {
+            charFrequencies.put(c, charFrequencies.getOrDefault(c, 0) + 1);
+        }
+
+        // Decrementar la frecuencia de caracteres en el mapa basado en la segunda cadena
+        for (char c : str2.toCharArray()) {
+            if (!charFrequencies.containsKey(c)) {
+                return false; // Carácter no encontrado en la primera cadena
+            }
+            charFrequencies.put(c, charFrequencies.get(c) - 1);
+            if (charFrequencies.get(c) < 0) {
+                return false; // Más ocurrencias en la segunda cadena que en la primera
+            }
+        }
+
+        // Si todas las frecuencias son cero, son anagramas
+        return true;
     }
 
     /*
@@ -48,7 +75,15 @@ public class Ejercicios {
      * Output: null
      */
     public int[] sumatoriaDeDos(int[] nums, int objetivo) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        Map<Integer, Integer> numMap = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = objetivo - nums[i];
+            if (numMap.containsKey(complement)) {
+                return new int[]{numMap.get(complement), i};
+            }
+            numMap.put(nums[i], i);
+        }
+        return null;
     }
 
     /**
@@ -60,8 +95,14 @@ public class Ejercicios {
      * Output: {h=1, o=1, l=1, a=1}
      */
     public void contarCaracteres(String texto) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        Map<Character, Integer> frecuencia = new HashMap<>();
+        for (char c : texto.toCharArray()) {
+            frecuencia.put(c, frecuencia.getOrDefault(c, 0) + 1);
+        }
+        System.out.println(frecuencia);
     }
+
+    
 
     /**
      * Verifica si dos palabras son anagramas.
@@ -72,6 +113,20 @@ public class Ejercicios {
      * Output: true
      */
     public boolean sonAnagramas(String palabra1, String palabra2) {
-        throw new UnsupportedOperationException("Not implemented yet");
+    if (palabra1.length() != palabra2.length()) return false;
+        Map<Character, Integer> charCount = new HashMap<>();
+
+        for (char c : palabra1.toCharArray()) {
+            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+        }
+
+        for (char c : palabra2.toCharArray()) {
+            if (!charCount.containsKey(c) || charCount.get(c) == 0) {
+                return false;
+            }
+            charCount.put(c, charCount.get(c) - 1);
+        }
+
+        return true;
     }
 }

@@ -156,7 +156,7 @@ Para administrar un directorio telefónico sin claves duplicadas y ordenado por 
 ---
 
 ### Salida esperada en Consola
-.0.6.7-hotspot\bin\java.exe' '@C:\Users\duran\AppData\Local\Temp\cp_cl04zik2kh7g2w8ozlkbgdlta.argfile' 'App' 
+```bash
 ----Practica Mapas----
 Nombre: Daniel Duran
 Empleado agregado: 
@@ -248,9 +248,6 @@ SID: 3, Name: Juan, Position: Dev
 SID: 4, Name: Pedro, Position: Dev
 
 SID: 5, Name: Pedro, Position: Dev
-PS D:\DEBERES DANIEL ANTONIO\UNIVERSIDAD POLITECNICA SALESIANA\SEGUNDO CICLO\Estructura de Datos\SegundoInterciclo\icc-estructura-u2-maps>
-
-
 
 Lista de empleados:
 
@@ -263,4 +260,7 @@ SID: 3, Name: Juan, Position: Dev
 SID: 4, Name: Pedro, Position: Dev
 
 SID: 5, Name: Pedro, Position: Dev
-PS D:\DEBERES DANIEL ANTONIO\UNIVERSIDAD POLITECNICA SALESIANA\SEGUNDO CICLO\Estructura de Datos\SegundoInterciclo\icc-estructura-u2-ma
+
+```
+### Ejercicios Mapas
+![alt text](image-1.png)
